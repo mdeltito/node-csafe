@@ -52,7 +52,7 @@ describe('Frame', () => {
 describe('FrameReader', () => {
   it('should emit Frame instances', (done) => {
     let reader = new CSAFE.FrameReader
-    let buffer = Buffer.from([241, 128, 128, 242])
+    let buffer = Buffer.from([0xF1, 0x80, 0x80, 0xF2])
     
     reader.on('frame', (frame) => {
       expect(frame).to.be.an.instanceOf(CSAFE.Frame)
@@ -63,7 +63,7 @@ describe('FrameReader', () => {
 
   it('can read standard Frames', (done) => {
     let reader = new CSAFE.FrameReader
-    let buffer = Buffer.from([241, 128, 128, 242])
+    let buffer = Buffer.from([0xF1, 0x80, 0x80, 0xF2])
     
     reader.on('frame', (frame) => {
       done()
@@ -73,8 +73,8 @@ describe('FrameReader', () => {
 
   it('can read Frames across multiple buffers', (done) => {
     let reader = new CSAFE.FrameReader
-    let buffer1 = Buffer.from([241, 128, 128])
-    let buffer2 = Buffer.from([242])
+    let buffer1 = Buffer.from([0xF1, 0x80, 0x80])
+    let buffer2 = Buffer.from([0xF2])
     
     reader.on('frame', (frame) => {
       done()
