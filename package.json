@@ -1,0 +1,24 @@
+{
+  "name": "csafe",
+  "version": "0.0.1",
+  "description": "CSAFE protocol implementation for node.",
+  "keywords": ["hid", "csafe", "concept2", "rowing", "pm2", "pm3", "pm4", "pm5"],
+  "main": "lib/csafe.js",
+  "repository": "git@github.com:mdeltito/node-csafe.git",
+  "author": "Michael J. Del Tito <mdeltito@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "*",
+    "gulp": "^3.9.1",
+    "gulp-mocha": "^3.0.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-watch": "^4.3.10",
+    "jshint": "^2.9.3",
+    "mocha": "*",
+    "sinon": "*",
+    "sinon-chai": "*"
+  },
+  "scripts": {
+    "test": "gulp test"
+  }
+}
