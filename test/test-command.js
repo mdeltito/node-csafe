@@ -15,4 +15,12 @@ describe('Command', () => {
     expect(command.buffer).to.be.eql(expected)
   })
 
+  it('can add data for long-type frames', () => {
+    let command = new CSAFE.Command('PMGetStrokeState', [0x09, 0x90])
+    let expected = Buffer.from([0xF1, 0xBF, 0x02, 0x09, 0x90, 0x24, 0xF2])
+
+    expect(command).to.be.an.instanceof(CSAFE.Frame)
+    expect(command.buffer).to.be.eql(expected)
+  })
+
 })
