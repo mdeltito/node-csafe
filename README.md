@@ -7,9 +7,9 @@ CSAFE protocol implementation for Node.js.
 
 # Description
 
-This library provides an implementation of the [CSAFE communication protocol](http://www.fitlinxx.com/csafe/) for exercise equipment and performance monitors.
-It provides an abstraction for the protocol's frame specification, a dictionary of standard CSAFE "commands",
-and a simple FrameReader for reading/emitting frames from a stream of bytes.
+This library provides an implementation of the [CSAFE communication protocol](http://www.fitlinxx.com/csafe/) for exercise equipment and performance monitors. It provides an abstraction for the protocol's frame specification, a dictionary of standard CSAFE "commands", and a simple FrameReader for reading/emitting frames from a stream of bytes.
+
+See also [node-concept2](https://github.com/mdeltito/node-concept2), which is a HID wrapper that enabled communication with [Concept2](https://www.concept2.com/) monitor devices using this protocol.   
 
 # Installation
 
