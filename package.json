@@ -17,17 +17,13 @@
   "author": "Michael J. Del Tito <mdeltito@gmail.com>",
   "license": "ISC",
   "devDependencies": {
-    "chai": "*",
-    "gulp": "^3.9.1",
-    "gulp-mocha": "^3.0.1",
-    "gulp-plumber": "^1.1.0",
-    "gulp-watch": "^4.3.10",
-    "mocha": "*",
-    "mocha-eslint": "^3.0.1",
-    "sinon": "*",
-    "sinon-chai": "*"
+    "chai": "^4.2.0",
+    "mocha": "^7.1.1",
+    "mocha-eslint": "^6.0.0",
+    "sinon": "^9.0.1",
+    "sinon-chai": "^3.5.0"
   },
   "scripts": {
-    "test": "gulp test"
+    "test": "mocha"
   }
 }
